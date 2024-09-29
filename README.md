@@ -1,6 +1,4 @@
-Here’s an enhanced and well-structured README for your **Laundry Pro** project. This version emphasizes clarity and provides concise explanations of the project’s goals, setup, features, and API endpoints.
 
----
 
 # Laundry Pro
 
