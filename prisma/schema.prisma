@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int      @id @default(autoincrement())
+  name     String
+  email    String   @unique
+  password String
+  role     String   
+  orders   Order[]
+  feedback Feedback[]
+}
+
+model Order {
+  id           Int      @id @default(autoincrement())
+  userId       Int
+  service      String   // Ensure this field exists
+  pickupDate   DateTime
+  deliveryDate DateTime
+  status       String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  User         User     @relation(fields: [userId], references: [id])
+}
+
+
+model Feedback {
+  id        Int      @id @default(autoincrement())
+  content   String
+  createdAt DateTime @default(now())
+  orderId   Int
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+}
