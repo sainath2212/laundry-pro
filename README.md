@@ -84,7 +84,8 @@ npx prisma migrate dev --name init
   {
     "name": "John Doe",
     "email": "john@example.com",
-    "password": "password123"
+    "password": "password123",
+    "role": "user"
   }
   ```
 - **Response:**
