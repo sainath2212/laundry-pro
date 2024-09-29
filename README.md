@@ -30,9 +30,8 @@
 
 ## Technologies
 - **Backend**: Node.js, Express.js, Prisma ORM
-- **Database**: PostgreSQL or MySQL
+- **Database**: MySQL
 - **Authentication**: JSON Web Tokens (JWT)
-- **Frontend**: Optional for extension (React, Vue, etc.)
 
 ## Architecture
 - **Models**: Prisma is used for ORM with models for `User`, `Order`, and `Feedback`.
@@ -44,7 +43,7 @@
 ### Prerequisites
 - **Node.js** (version >= 14.x)
 - **NPM** or **Yarn**
-- **PostgreSQL/MySQL** database
+- **MySQL** database
 
 ### Installation
 1. **Clone the repository**
