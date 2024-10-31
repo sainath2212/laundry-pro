@@ -1,6 +1,3 @@
-Here's an updated README file that reflects the structure and requirements of your project, as well as any necessary adjustments for clarity or additional features.
-
----
 
 # Laundry Pro
 
